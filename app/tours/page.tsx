@@ -157,6 +157,7 @@ export default function ToursPage() {
                   ))}
                 </select>
               </div>
+            </div>
           )}
 
           {/* Sport pills row */}
