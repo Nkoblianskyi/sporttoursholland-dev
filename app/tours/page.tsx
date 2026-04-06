@@ -9,7 +9,7 @@ import { tours, sportLabels, type Tour } from '@/lib/tours-data'
 import { Search, SlidersHorizontal, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
-const sports = ['alle', 'voetbal', 'tennis', 'wielrennen', 'formule1', 'atletiek', 'ijshockey'] as const
+const sports = ['alle', 'fietsen', 'motorreis', 'hardlopen', 'wandelen', 'wielrennen', 'watersport'] as const
 type SportFilter = (typeof sports)[number]
 
 const countries = ['alle', ...Array.from(new Set(tours.map((t) => t.country)))]
@@ -64,7 +64,7 @@ export default function ToursPage() {
               Alle sportreizen
             </h1>
             <p className="text-white/75 text-sm mt-3 max-w-md mx-auto font-sans">
-              Filter op jouw favoriete sport, bestemming of budget en vind de perfecte sportreis.
+              Avontuurlijke auteurstours — mountainbike, motor, wandelen, hardlopen en meer.
             </p>
           </div>
           <div
@@ -83,7 +83,7 @@ export default function ToursPage() {
               <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
               <input
                 type="search"
-                placeholder="Zoek op stad, land of sport..."
+                placeholder="Zoek op stad, land of type tour..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 className="w-full pl-9 pr-4 py-2.5 bg-card border-2 border-border text-sm font-sans text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary shadow-[2px_2px_0_var(--kraft-dark)]"
@@ -113,13 +113,13 @@ export default function ToursPage() {
             )}
           </div>
 
-          {/* Filter panels */}
+          {/* Filter panel */}
           {filtersOpen && (
             <div className="bg-card border-2 border-border shadow-[3px_3px_0_var(--kraft-dark)] p-4 mb-6 grid sm:grid-cols-2 gap-4">
               {/* Sport filter */}
               <div>
                 <label className="block text-xs font-sans font-bold text-muted-foreground mb-2 uppercase tracking-wider">
-                  Sport
+                  Type tour
                 </label>
                 <div className="flex flex-wrap gap-1.5">
                   {sports.map((s) => (
@@ -148,7 +148,7 @@ export default function ToursPage() {
                   value={country}
                   onChange={(e) => setCountry(e.target.value)}
                   className="w-full px-3 py-2 bg-background border-2 border-border text-sm font-sans text-foreground focus:outline-none focus:border-primary"
-                  aria-label="Filtereren op land"
+                  aria-label="Filteren op land"
                 >
                   {countries.map((c) => (
                     <option key={c} value={c}>
@@ -161,7 +161,7 @@ export default function ToursPage() {
           )}
 
           {/* Sport pills row */}
-          <div className="flex gap-2 overflow-x-auto pb-1 mb-6 scrollbar-none">
+          <div className="flex gap-2 overflow-x-auto pb-2 mb-6 scrollbar-none">
             {sports.map((s) => (
               <button
                 key={s}
@@ -194,7 +194,9 @@ export default function ToursPage() {
             <div className="py-20 text-center">
               <div className="sticky-note inline-block px-8 py-6 scrap-rotate-2">
                 <p className="font-serif font-bold text-foreground mb-2">Geen reizen gevonden</p>
-                <p className="text-sm text-muted-foreground font-sans">Pas je filters aan om meer resultaten te zien.</p>
+                <p className="text-sm text-muted-foreground font-sans">
+                  Pas je filters aan om meer resultaten te zien.
+                </p>
               </div>
               <div className="mt-6">
                 <button

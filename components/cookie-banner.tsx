@@ -45,6 +45,7 @@ export function CookieBanner() {
         </button>
 
         <div className="flex items-center gap-2 mb-2">
+          <Cookie size={18} className="text-primary" />
           <h3 className="font-serif font-bold text-sm text-foreground">Wij gebruiken cookies</h3>
         </div>
 

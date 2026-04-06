@@ -111,6 +111,15 @@ export default function ContactPage() {
                       </a>
                     </li>
                     <li className="flex items-center gap-2 text-muted-foreground">
+                      <Phone size={14} className="text-primary shrink-0" />
+                      <a
+                        href="tel:+31201234567"
+                        className="text-xs hover:text-primary transition-colors"
+                      >
+                        +31 20 123 4567
+                      </a>
+                    </li>
+                    <li className="flex items-center gap-2 text-muted-foreground">
                       <Globe size={14} className="text-primary shrink-0" />
                       <span className="text-xs">sporttoursholland.com</span>
                     </li>

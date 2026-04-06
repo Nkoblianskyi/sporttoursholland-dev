@@ -18,34 +18,38 @@ import {
 const tips = [
   {
     icon: Backpack,
-    title: 'Boek je visa op tijd',
-    body: 'Voor reizen buiten de Schengenzone is een visum verplicht. Regel dit minstens 6 weken van tevoren om teleurstellingen te voorkomen.',
+    title: 'Pak slim in voor een actieve reis',
+    body: 'Lichte functionele kleding, goede schoenen en een compacte dagtas zijn essentieel. Minder bagage betekent meer vrijheid onderweg.',
   },
   {
     icon: Shield,
     title: 'Sluit een reisverzekering af',
-    body: 'Een goede reisverzekering dekt medische kosten, annulering én bagage. Onmisbaar bij elke sportreis.',
+    body: 'Een goede reisverzekering dekt medische kosten, annulering én uitrusting. Onmisbaar bij elke actieve sportreis in Europa.',
   },
   {
     icon: Clock,
-    title: 'Kom vroeg aan bij het stadion',
-    body: 'Grote sportevenementen trekken veel bezoekers. Kom minimaal 1,5 uur eerder om de sfeer te proeven en wachtrijen te vermijden.',
+    title: 'Train vooraf op je eigen niveau',
+    body: 'Of je nu een bergwandeling of een marathon plant — een paar weken voorbereiding maakt het verschil tussen genieten en doorploeteren.',
   },
   {
     icon: Star,
-    title: 'Draag comfortabel schoeisel',
-    body: 'Je loopt veel tijdens sportreizen. Kies voor sneakers of stevige wandelschoenen, ook al is het een formeel evenement.',
+    title: 'Vertrouw op je begeleider',
+    body: 'Onze gidsen kennen het gebied als hun broekzak. Luister naar hun adviezen over tempo, weersomstandigheden en lokale gebruiken.',
   },
 ]
 
 const faqs = [
   {
-    q: 'Wat is inbegrepen in de reisprijs?',
-    a: 'De prijs per persoon omvat altijd de evenementtickets, hotelovernachtingen, en de vermelde vervoerswijze. Vluchten zijn inclusief tenzij anders vermeld. Kijk bij elke reis onder "Inbegrepen" voor het exacte pakket.',
+    q: 'Wat is inbegrepen in de reisarrangement?',
+    a: 'Elk arrangement omvat vervoer, overnachtingen en maaltijden zoals vermeld, plus begeleiding door een ervaren gids. Kijk bij elke reis onder "Inbegrepen" voor het exacte pakket.',
   },
   {
     q: 'Kan ik individueel boeken of alleen in groep?',
     a: 'Beide opties zijn mogelijk. Onze reizen zijn samengesteld voor groepen van 10–25 personen, maar individuele reizigers zijn van harte welkom. U reist dan mee in een bestaande groep.',
+  },
+  {
+    q: 'Heb ik sportervaring nodig voor de avontuurlijke tours?',
+    a: 'Dat hangt af van de tour. Sommige reizen zijn geschikt voor beginners met een basis conditie, andere vereisen meer ervaring. Bij elke reis staat duidelijk het moeilijkheidsniveau vermeld.',
   },
   {
     q: 'Wat is het annuleringsbeleid?',
@@ -54,10 +58,6 @@ const faqs = [
   {
     q: 'In welke talen wordt de reis begeleid?',
     a: 'Onze reisbegeleiders spreken vloeiend Nederlands. Bij internationale groepen schakelen we ook Engelse begeleiding in.',
-  },
-  {
-    q: 'Zijn de reizen ook geschikt voor kinderen?',
-    a: 'De meeste reizen zijn geschikt voor kinderen vanaf 8 jaar. Sommige arrangement, zoals de Formule 1 reis, hebben speciale gezinspakketten. Neem contact met ons op voor maatwerkadvies.',
   },
 ]
 
@@ -110,7 +110,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-white/85 text-base leading-relaxed mb-8 max-w-md mx-auto font-sans">
-              Exclusieve sportreizen voor echte fans. Van voetbal in Amsterdam tot F1 in Monaco — wij verzorgen elk detail.
+              Avontuurlijke auteurstours door Nederland en Europa. Mountainbike, motorreizen, bergwandelingen, marathons en meer — wij verzorgen elk detail.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -183,10 +183,10 @@ export default function HomePage() {
                 Passie voor sport &amp; reizen in één pakket
               </h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                SportToursHolland is opgericht door een stel fanatieke sportenthousiasten die zelf weten hoe het voelt om een topwedstrijd live mee te maken. We combineren jarenlange reiservaring met echte sportkennis om de perfecte sportreis samen te stellen.
+                SportToursHolland is opgericht door een stel fanatieke sportliefhebbers die zelf weten hoe het voelt om avontuurlijk op reis te gaan. We combineren jarenlange reiservaring met echte sportpassie om de perfecte auteurstour samen te stellen.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                Van een spannende voetbalwedstrijd in Amsterdam tot de hectiek van de Formule 1 in Monaco — wij regelen elk detail zodat jij je volledig kunt focussen op de beleving.
+                Van een mountainbike-avontuur door de Ardennen tot een kayaktocht door de Noorse fjorden — wij regelen elk detail zodat jij je volledig kunt focussen op de beleving.
               </p>
               <Link
                 href="/about"

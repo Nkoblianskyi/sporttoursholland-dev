@@ -76,7 +76,7 @@ export default function PrivacyPage() {
               Privacybeleid
             </h1>
             <p className="text-white/70 text-xs mt-2 font-sans">
-              Laatste wijziging: 2026
+              Laatste wijziging: 6 april 2026
             </p>
           </div>
           <div
