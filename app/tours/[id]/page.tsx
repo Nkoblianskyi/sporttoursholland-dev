@@ -229,13 +229,6 @@ export default async function TourDetailPage({ params }: { params: Promise<Param
                 >
                   Vraag een offerte aan
                 </Link>
-
-                <p className="text-xs text-muted-foreground text-center mt-3 font-sans">
-                  Vragen? Bel ons op{' '}
-                  <a href="tel:+31201234567" className="text-primary hover:underline">
-                    +31 20 123 4567
-                  </a>
-                </p>
               </div>
             </aside>
           </div>
