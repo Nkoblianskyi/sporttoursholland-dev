@@ -5,18 +5,18 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { CookieBanner } from '@/components/cookie-banner'
 import { TourCard } from '@/components/tour-card'
-import { tours, sportLabels, type Tour } from '@/lib/tours-data'
+import { tours, activityLabels, type Tour } from '@/lib/tours-data'
 import { Search, SlidersHorizontal, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
-const sports = ['alle', 'fietsen', 'motorreis', 'hardlopen', 'wandelen', 'wielrennen', 'watersport'] as const
-type SportFilter = (typeof sports)[number]
+const activities = ['alle', 'mtb', 'motortour', 'hike', 'racefiets', 'kajak'] as const
+type ActivityFilter = (typeof activities)[number]
 
 const countries = ['alle', ...Array.from(new Set(tours.map((t) => t.country)))]
 
 export default function ToursPage() {
   const [query, setQuery] = useState('')
-  const [sport, setSport] = useState<SportFilter>('alle')
+  const [activity, setActivity] = useState<ActivityFilter>('alle')
   const [country, setCountry] = useState('alle')
   const [filtersOpen, setFiltersOpen] = useState(false)
 
@@ -28,18 +28,18 @@ export default function ToursPage() {
         t.city.toLowerCase().includes(query.toLowerCase()) ||
         t.country.toLowerCase().includes(query.toLowerCase())
 
-      const matchSport = sport === 'alle' || t.sport === sport
+      const matchActivity = activity === 'alle' || t.activity === activity
       const matchCountry = country === 'alle' || t.country === country
 
-      return matchQuery && matchSport && matchCountry
+      return matchQuery && matchActivity && matchCountry
     })
-  }, [query, sport, country])
+  }, [query, activity, country])
 
-  const hasFilters = query || sport !== 'alle' || country !== 'alle'
+  const hasFilters = query || activity !== 'alle' || country !== 'alle'
 
   const clearFilters = () => {
     setQuery('')
-    setSport('alle')
+    setActivity('alle')
     setCountry('alle')
   }
 
@@ -61,10 +61,10 @@ export default function ToursPage() {
               Onze reizen 2026
             </div>
             <h1 className="font-serif font-bold text-3xl sm:text-4xl text-white text-balance">
-              Alle sportreizen
+              Alle auteurstours
             </h1>
             <p className="text-white/75 text-sm mt-3 max-w-md mx-auto font-sans">
-              Avontuurlijke auteurstours — mountainbike, motor, wandelen, hardlopen en meer.
+              Kleinschalige auteurstours — mountainbike, motortocht, bergwandelen, fietsen en kajak.
             </p>
           </div>
           <div
@@ -116,24 +116,24 @@ export default function ToursPage() {
           {/* Filter panel */}
           {filtersOpen && (
             <div className="bg-card border-2 border-border shadow-[3px_3px_0_var(--kraft-dark)] p-4 mb-6 grid sm:grid-cols-2 gap-4">
-              {/* Sport filter */}
+              {/* Activity filter */}
               <div>
                 <label className="block text-xs font-sans font-bold text-muted-foreground mb-2 uppercase tracking-wider">
                   Type tour
                 </label>
                 <div className="flex flex-wrap gap-1.5">
-                  {sports.map((s) => (
+                  {activities.map((a) => (
                     <button
-                      key={s}
-                      onClick={() => setSport(s)}
+                      key={a}
+                      onClick={() => setActivity(a)}
                       className={cn(
                         'px-2.5 py-1 text-xs font-sans border transition-colors',
-                        sport === s
+                        activity === a
                           ? 'bg-primary text-primary-foreground border-primary'
                           : 'bg-background text-foreground border-border hover:border-primary',
                       )}
                     >
-                      {s === 'alle' ? 'Alle' : sportLabels[s as Tour['sport']]}
+                      {a === 'alle' ? 'Alle' : activityLabels[a as Tour['activity']]}
                     </button>
                   ))}
                 </div>
@@ -160,20 +160,20 @@ export default function ToursPage() {
             </div>
           )}
 
-          {/* Sport pills row */}
+          {/* Activity pills row */}
           <div className="flex gap-2 overflow-x-auto pb-2 mb-6 scrollbar-none">
-            {sports.map((s) => (
+            {activities.map((a) => (
               <button
-                key={s}
-                onClick={() => setSport(s)}
+                key={a}
+                onClick={() => setActivity(a)}
                 className={cn(
                   'whitespace-nowrap px-3 py-1.5 text-xs font-sans border-2 transition-colors shrink-0',
-                  sport === s
+                  activity === a
                     ? 'bg-primary text-primary-foreground border-primary shadow-[2px_2px_0_var(--ink)]'
                     : 'bg-card text-foreground border-border hover:border-primary',
                 )}
               >
-                {s === 'alle' ? 'Alle reizen' : sportLabels[s as Tour['sport']]}
+                {a === 'alle' ? 'Alle reizen' : activityLabels[a as Tour['activity']]}
               </button>
             ))}
           </div>

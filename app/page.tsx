@@ -24,12 +24,12 @@ const tips = [
   {
     icon: Shield,
     title: 'Sluit een reisverzekering af',
-    body: 'Een goede reisverzekering dekt medische kosten, annulering én uitrusting. Onmisbaar bij elke actieve sportreis in Europa.',
+    body: 'Een goede reisverzekering dekt medische kosten, annulering én uitrusting. Onmisbaar bij elke actieve tour in Europa.',
   },
   {
     icon: Clock,
     title: 'Train vooraf op je eigen niveau',
-    body: 'Of je nu een bergwandeling of een marathon plant — een paar weken voorbereiding maakt het verschil tussen genieten en doorploeteren.',
+    body: 'Of je nu een bergwandeling of een meerdaagse fietstocht plant — een paar weken voorbereiding maakt het verschil tussen genieten en doorploeteren.',
   },
   {
     icon: Star,
@@ -48,8 +48,8 @@ const faqs = [
     a: 'Beide opties zijn mogelijk. Onze reizen zijn samengesteld voor groepen van 10–25 personen, maar individuele reizigers zijn van harte welkom. U reist dan mee in een bestaande groep.',
   },
   {
-    q: 'Heb ik sportervaring nodig voor de avontuurlijke tours?',
-    a: 'Dat hangt af van de tour. Sommige reizen zijn geschikt voor beginners met een basis conditie, andere vereisen meer ervaring. Bij elke reis staat duidelijk het moeilijkheidsniveau vermeld.',
+    q: 'Heb ik ervaring nodig voor de avontuurlijke tours?',
+    a: 'Dat hangt af van de tour. Sommige reizen zijn geschikt voor beginners met een basisconditie, andere vragen meer ervaring. Bij elke reis staat duidelijk het moeilijkheidsniveau vermeld.',
   },
   {
     q: 'Wat is het annuleringsbeleid?',
@@ -105,12 +105,12 @@ export default function HomePage() {
               className="font-serif font-bold text-4xl sm:text-5xl text-white leading-tight text-balance mb-4"
               style={{ textShadow: '2px 2px 0 rgba(0,0,0,0.3)' }}
             >
-              Sport beleven.<br />
+              Op pad in beweging.<br />
               <span className="text-sticker-yellow">Wereld ontdekken.</span>
             </h1>
 
             <p className="text-white/85 text-base leading-relaxed mb-8 max-w-md mx-auto font-sans">
-              Avontuurlijke auteurstours door Nederland en Europa. Mountainbike, motorreizen, bergwandelingen, marathons en meer — wij verzorgen elk detail.
+              Kleinschalige auteurstours door Nederland en Europa. Mountainbike, motortocht, bergwandelen, fietsen en kajak — wij verzorgen elk detail.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -131,7 +131,7 @@ export default function HomePage() {
             {/* Stats row */}
             <div className="mt-12 flex justify-center gap-6 sm:gap-10">
               {[
-                { val: '6+', label: 'Sporten' },
+                { val: '6+', label: 'Tours' },
                 { val: '12+', label: 'Landen' },
                 { val: '500+', label: 'Tevreden reizigers' },
               ].map(({ val, label }) => (
@@ -161,7 +161,7 @@ export default function HomePage() {
               <div className="photo-frame overflow-hidden aspect-[4/3]">
                 <Image
                   src="/images/about-bg.jpg"
-                  alt="Enthousiaste sportfans onderweg met SportToursHolland"
+                  alt="Enthousiaste reizigers onderweg met SportToursHolland"
                   fill
                   className="object-cover"
                 />
@@ -180,10 +180,10 @@ export default function HomePage() {
                 id="about-heading"
                 className="font-serif font-bold text-2xl sm:text-3xl text-foreground leading-tight text-balance mb-4"
               >
-                Passie voor sport &amp; reizen in één pakket
+                Passie voor reizen in beweging
               </h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                SportToursHolland is opgericht door een stel fanatieke sportliefhebbers die zelf weten hoe het voelt om avontuurlijk op reis te gaan. We combineren jarenlange reiservaring met echte sportpassie om de perfecte auteurstour samen te stellen.
+                SportToursHolland is opgericht door een stel fanatieke reizigers die houden van natuur, routes en kleine groepen. We combineren jarenlange reiservaring met lokale kennis om de perfecte auteurstour samen te stellen.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                 Van een mountainbike-avontuur door de Ardennen tot een kayaktocht door de Noorse fjorden — wij regelen elk detail zodat jij je volledig kunt focussen op de beleving.
@@ -225,7 +225,7 @@ export default function HomePage() {
                   id="tours-heading"
                   className="font-serif font-bold text-2xl sm:text-3xl text-foreground text-balance"
                 >
-                  Uitgelichte sportreizen
+                  Uitgelichte tours
                 </h2>
               </div>
               <Link
@@ -263,7 +263,7 @@ export default function HomePage() {
               id="tips-heading"
               className="font-serif font-bold text-2xl sm:text-3xl text-foreground text-balance"
             >
-              Zo haal je het meeste uit je sportreis
+              Zo haal je het meeste uit je tour
             </h2>
           </div>
 
@@ -336,7 +336,7 @@ export default function HomePage() {
                 Klaar voor het avontuur?
               </h2>
               <p className="text-primary-foreground/80 text-sm leading-relaxed mb-6 max-w-sm mx-auto font-sans">
-                Blader door ons volledige reizenaanbod en vind de sportreis die perfect bij jou past.
+                Blader door ons volledige aanbod en vind de tour die perfect bij jou past.
               </p>
               <Link
                 href="/tours"

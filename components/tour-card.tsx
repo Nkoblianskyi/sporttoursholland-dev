@@ -1,16 +1,15 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { MapPin, Calendar, Users } from 'lucide-react'
-import { type Tour, sportLabels } from '@/lib/tours-data'
+import { type Tour, activityLabels } from '@/lib/tours-data'
 import { cn } from '@/lib/utils'
 
-const sportColors: Record<Tour['sport'], string> = {
-  voetbal: 'bg-sticker-green text-foreground',
-  tennis: 'bg-sticker-yellow text-foreground',
-  wielrennen: 'bg-primary/20 text-primary',
-  formule1: 'bg-accent/20 text-accent-foreground',
-  atletiek: 'bg-blue-100 text-blue-800',
-  ijshockey: 'bg-sky-100 text-sky-800',
+const activityColors: Record<Tour['activity'], string> = {
+  mtb: 'bg-sticker-green text-foreground',
+  motortour: 'bg-accent/20 text-accent-foreground',
+  hike: 'bg-primary/20 text-primary',
+  racefiets: 'bg-sticker-yellow text-foreground',
+  kajak: 'bg-blue-100 text-blue-800',
 }
 
 const rotations = ['scrap-rotate-1', 'scrap-rotate-2', 'scrap-rotate-3', 'scrap-rotate-neg', '', 'scrap-rotate-1']
@@ -57,9 +56,9 @@ export function TourCard({ tour, index = 0, compact = false }: Props) {
         </div>
 
         <div className="p-4">
-          {/* Sport badge */}
-          <span className={cn('text-xs px-2 py-0.5 font-sans border border-foreground/10', sportColors[tour.sport])}>
-            {sportLabels[tour.sport]}
+          {/* Activity badge */}
+          <span className={cn('text-xs px-2 py-0.5 font-sans border border-foreground/10', activityColors[tour.activity])}>
+            {activityLabels[tour.activity]}
           </span>
 
           <h3 className="font-serif font-bold text-base mt-2 mb-1 text-foreground leading-tight text-balance group-hover:text-primary transition-colors">

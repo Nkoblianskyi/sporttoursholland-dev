@@ -47,7 +47,7 @@ export function Navbar() {
             href="/tours"
             className="ml-2 px-4 py-1.5 rounded-sm bg-accent text-accent-foreground text-sm font-sans hover:opacity-90 transition-opacity border-2 border-foreground/20 shadow-[2px_2px_0_var(--ink)] hover:shadow-[1px_1px_0_var(--ink)] active:shadow-none"
           >
-            Boek een reis
+            Bekijk tours
           </Link>
         </nav>
 
@@ -83,7 +83,7 @@ export function Navbar() {
             className="mt-2 px-4 py-2 text-center rounded-sm bg-accent text-accent-foreground text-sm font-sans border-2 border-foreground/20 shadow-[2px_2px_0_var(--ink)]"
             onClick={() => setOpen(false)}
           >
-            Boek een reis
+            Bekijk tours
           </Link>
         </nav>
       )}

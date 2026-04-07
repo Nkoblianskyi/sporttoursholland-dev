@@ -1,7 +1,7 @@
 export type Tour = {
   id: string
   title: string
-  sport: 'fietsen' | 'motorreis' | 'hardlopen' | 'wandelen' | 'wielrennen' | 'watersport'
+  activity: 'mtb' | 'motortour' | 'hike' | 'racefiets' | 'kajak'
   country: string
   city: string
   dateFrom: string
@@ -21,7 +21,7 @@ export const tours: Tour[] = [
   {
     id: 'mountainbike-ardennen',
     title: 'Mountainbike Avontuur door de Ardennen',
-    sport: 'fietsen',
+    activity: 'mtb',
     country: 'België',
     city: 'La Roche-en-Ardenne',
     dateFrom: '2026-05-08',
@@ -51,7 +51,7 @@ export const tours: Tour[] = [
   {
     id: 'motorreis-alpen',
     title: 'Motoravontuur door de Alpen',
-    sport: 'motorreis',
+    activity: 'motortour',
     country: 'Zwitserland',
     city: 'Interlaken',
     dateFrom: '2026-06-12',
@@ -61,7 +61,7 @@ export const tours: Tour[] = [
     shortDescription:
       'Zeven dagen rijden over de mooiste bergpassen van de Alpen. Van de Grimselpass tot de Furkapass — een route die je bij houdt.',
     description:
-      'Dit is de motorreis die je al jaren wil rijden. Zeven dagen lang rijd je in een kleine groep over de meest spectaculaire bergpassen van de Zwitserse en Italiaanse Alpen. Elke dag start je vanuit een ander dorp, met een zorgvuldig samengestelde route die zowel de beroemde als de verborgen passen aandoet. De groep bestaat uit maximaal 10 motorrijders, begeleid door een ervaren reisgids op de motor. We verblijven in kleine, authentieke berghotels. De route gaat over de Grimselpass, Furkapass, Gotthard, en langs het Comomeer. Een ervaring die je motorsport op een nieuwe manier laat beleven — vrij, puur en onvergetelijk.',
+      'Dit is de motortocht die je al jaren wil rijden. Zeven dagen lang rijd je in een kleine groep over de meest spectaculaire bergpassen van de Zwitserse en Italiaanse Alpen. Elke dag start je vanuit een ander dorp, met een zorgvuldig samengestelde route die zowel de beroemde als de verborgen passen aandoet. De groep bestaat uit maximaal 10 motorrijders, begeleid door een ervaren reisgids op de motor. We verblijven in kleine, authentieke berghotels. De route gaat over de Grimselpass, Furkapass, Gotthard, en langs het Comomeer. Een ervaring die je motorrijden op een nieuwe manier laat beleven — vrij, puur en onvergetelijk.',
     includes: [
       'Begeleide groepsreis met ervaren reisgids',
       '6 overnachtingen berghotels',
@@ -79,38 +79,9 @@ export const tours: Tour[] = [
     tag: 'Aanbevolen',
   },
   {
-    id: 'marathon-amsterdam',
-    title: 'Jouw Eerste Marathon door Amsterdam',
-    sport: 'hardlopen',
-    country: 'Nederland',
-    city: 'Amsterdam',
-    dateFrom: '2026-07-05',
-    dateTo: '2026-07-06',
-    duration: 2,
-    image: '/images/tour-3.jpg',
-    shortDescription:
-      'Loop jouw eerste of snelste marathon door de grachten en parken van Amsterdam, met trainingscoach en alles geregeld.',
-    description:
-      'Een marathon door Amsterdam is één van de mooiste hardloopreizen die je kunt maken. Historische grachten, brede lanen, het Vondelpark — het parcours is een belevenis op zich. Dit arrangement is ideaal voor wie zijn of haar eerste marathon wil lopen, maar ook voor ervaren lopers die een nieuw persoonlijk record willen neerzetten. Inclusief is een voorbereidingsdag met onze hardloopcoach, waarbij je de ideale strategie en voeding voor jouw niveau bespreekt. Na de finish is er een groepsborrel met medailles en herinneringen voor het leven. Hotel in het centrum, alles op loopafstand.',
-    includes: [
-      '1 overnachting centraal hotel Amsterdam',
-      'Deelname marathon (inschrijving inbegrepen)',
-      'Voorbereidingssessie met coach',
-      'Finishpakket & herinneringsmedaille',
-      'Groepsborrel na de finish',
-    ],
-    difficulty: 'avontuurlijk',
-    groupSize: 25,
-    highlights: [
-      'Marathoncoaching op jouw niveau',
-      'Prachtig parcours langs Amsterdamse grachten',
-      'Onvergetelijke groepsfinish',
-    ],
-  },
-  {
     id: 'bergwandelen-dolomieten',
     title: 'Bergwandelen in de Dolomieten',
-    sport: 'wandelen',
+    activity: 'hike',
     country: 'Italië',
     city: 'Cortina dAmpezzo',
     dateFrom: '2026-07-25',
@@ -140,7 +111,7 @@ export const tours: Tour[] = [
   {
     id: 'fietsvakantie-toscane',
     title: 'Fietsvakantie door het Hart van Toscane',
-    sport: 'wielrennen',
+    activity: 'racefiets',
     country: 'Italië',
     city: 'Siena',
     dateFrom: '2026-09-05',
@@ -170,7 +141,7 @@ export const tours: Tour[] = [
   {
     id: 'kayak-fjorden-noorwegen',
     title: 'Kayaktocht door de Noorse Fjorden',
-    sport: 'watersport',
+    activity: 'kajak',
     country: 'Noorwegen',
     city: 'Flåm',
     dateFrom: '2026-08-15',
@@ -198,12 +169,11 @@ export const tours: Tour[] = [
   },
 ]
 
-export const sportLabels: Record<Tour['sport'], string> = {
-  fietsen: 'Mountainbike',
-  motorreis: 'Motorreis',
-  hardlopen: 'Hardlopen',
-  wandelen: 'Bergwandelen',
-  wielrennen: 'Wielrennen',
-  watersport: 'Watersport',
+export const activityLabels: Record<Tour['activity'], string> = {
+  mtb: 'Mountainbike',
+  motortour: 'Motortocht',
+  hike: 'Bergwandelen',
+  racefiets: 'Fietstocht',
+  kajak: 'Kajak',
 }
 

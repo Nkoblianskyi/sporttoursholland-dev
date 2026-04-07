@@ -22,7 +22,7 @@ const tips = [
   {
     icon: Backpack,
     title: 'Pak slim in',
-    body: 'Breng alleen wat je echt nodig hebt. Een lichte rugzak met een regenjas, extra sokken, een waterflacon en een portabele oplader is al genoeg voor de meeste sportevenementen. Voorkom grote koffers bij dagtochten.',
+    body: 'Breng alleen wat je echt nodig hebt. Een lichte rugzak met regenjas, extra sokken, water, snacks en een powerbank is voor de meeste dagtochten al genoeg. Minder bagage betekent meer vrijheid onderweg.',
     tag: 'Voorbereiding',
     color: 'bg-sticker-yellow',
   },
@@ -36,21 +36,21 @@ const tips = [
   {
     icon: Sun,
     title: 'Check het weer vooraf',
-    body: 'Europa kent sterk wisselend weer. Controleer de weersvoorspelling 48 uur voor vertrek en neem passende kleding mee. Bij outdoor evenementen is een poncho of lichte jas altijd handig.',
+    body: 'Europa kent sterk wisselend weer. Controleer de voorspelling 48 uur voor vertrek en neem laagjes mee. Op hoogte kan het snel omslaan: een poncho of lichte jas is altijd handig.',
     tag: 'Klimaat',
     color: 'bg-primary/20',
   },
   {
     icon: Camera,
-    title: 'Fotobeleid per evenement',
-    body: 'Elk sportevenement heeft eigen regels voor fotografie. Professionele camera\'s met verwisselbare lenzen zijn bij veel evenementen verboden. Controleer de regels op de officiële website of vraag het onze begeleider.',
-    tag: 'Regels',
+    title: 'Foto\'s zonder gedoe',
+    body: 'Neem een compacte camera of telefoon mee en zorg voor voldoende opslag en een powerbank. In natuurgebieden geldt soms een droneverbod of rustregels: respecteer lokale richtlijnen en de natuur.',
+    tag: 'Praktisch',
     color: 'bg-accent/20',
   },
   {
     icon: Utensils,
     title: 'Eet lokaal',
-    body: 'De lokale keuken is een verrijking van iedere reis. Vermijd toeristische restaurants rondom evenementenlocaties — ze zijn vaak duurder. Vraag onze reisbegeleider voor eerlijke tips over authentieke eetgelegenheden.',
+    body: 'De lokale keuken is een verrijking van iedere reis. Vermijd de drukste hotspots en kies voor kleine, lokale adressen. Vraag je begeleider naar eerlijke tips voor authentieke eetgelegenheden.',
     tag: 'Eten & drinken',
     color: 'bg-sticker-yellow',
   },
@@ -85,22 +85,22 @@ const tips = [
   {
     icon: MapPin,
     title: 'Ken uw locatie',
-    body: 'Download offline kaarten van uw bestemming via Google Maps of Maps.me voor vertrek. Sla het adres van uw hotel en het evenemententerrein op in uw telefoon. Ken het dichtstbijzijnde ziekenhuis en de lokale noodhulp.',
+    body: 'Download offline kaarten van uw bestemming via Google Maps of Maps.me voor vertrek. Sla het adres van uw hotel en startpunten van routes op. Ken ook het dichtstbijzijnde ziekenhuis en de lokale noodnummers.',
     tag: 'Navigatie',
     color: 'bg-sticker-green',
   },
   {
     icon: AlertTriangle,
-    title: 'Veiligheid op evenementen',
-    body: 'Grote menigten trekken zakkenrollers aan. Draag uw portemonnee aan de voorkant of gebruik een binnenzak. Spreek een vaste ontmoetingsplek af met uw reisgezelschap en sla de contactgegevens van uw reisbegeleider op.',
+    title: 'Veiligheid onderweg',
+    body: 'Op actieve dagen helpt een eenvoudige routine: check je uitrusting, neem water en een extra laag mee, en bespreek het plan met de groep. Sla de contactgegevens van je begeleider op en spreek een terugvalpunt af.',
     tag: 'Veiligheid',
     color: 'bg-accent/20',
   },
   {
     icon: Check,
-    title: 'Aankomst & tribuneprotocol',
-    body: 'Kom minstens 90 minuten voor aanvang aan bij grote evenementen. De ingangen zijn bezet en veiligheidscontroles kosten tijd. Draag geen verboden items (drankflessen, vlaggen groter dan A4 enz.) tenzij anders vermeld.',
-    tag: 'Praktisch',
+    title: 'Start relaxed',
+    body: 'Plan tijd in voor ontbijt, het afstellen van je materiaal en een korte briefing. Een rustige start voorkomt stress en maakt dat je onderweg meer geniet van het landschap en de groep.',
+    tag: 'Voorbereiding',
     color: 'bg-primary/20',
   },
 ]
@@ -136,9 +136,9 @@ const rotations = [
 ]
 
 export const metadata = {
-  title: 'Reisgids & Sportreis Tips – SportToursHolland',
+  title: 'Reisgids Tips – SportToursHolland',
   description:
-    'Praktische reisgids voor sportreizigers. Alles wat u moet weten over inpakken, verzekeringen, veiligheid, eten en communicatie op uw sportreis.',
+    'Praktische reisgids voor auteurstours. Tips over inpakken, veiligheid, verzekeringen, eten en voorbereiding voor actieve reizen.',
 }
 
 export default function TipsPage() {
@@ -160,10 +160,10 @@ export default function TipsPage() {
               Handige reisinformatie
             </div>
             <h1 className="font-serif font-bold text-3xl sm:text-4xl text-white text-balance">
-              Reisgids voor sportreizigers
+              Reisgids voor auteurstours
             </h1>
             <p className="text-white/75 text-sm mt-3 max-w-md mx-auto font-sans">
-              Alles wat u moet weten voor een zorgeloze en onvergetelijke sportreis door Nederland en Europa.
+              Alles wat u moet weten voor een zorgeloze en onvergetelijke actieve reis door Nederland en Europa.
             </p>
           </div>
           <div
@@ -186,10 +186,10 @@ export default function TipsPage() {
                 Slim reizen begint met goede voorbereiding
               </h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                Na honderden sportreizen door heel Europa hebben onze begeleiders een schat aan praktische kennis opgebouwd. Deze reisgids bundelt de beste tips zodat u volledig voorbereid op pad gaat.
+                Na veel kleinschalige tours door heel Europa hebben onze begeleiders een schat aan praktische kennis opgebouwd. Deze reisgids bundelt de beste tips zodat u volledig voorbereid op pad gaat.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Van het juiste inpakken tot veiligheid in grote menigten — elke tip is gebaseerd op echte ervaringen van onze reizigers.
+                Van slim inpakken tot veiligheid onderweg — elke tip is gebaseerd op echte ervaringen van onze reizigers.
               </p>
             </div>
             <div className="relative scrap-rotate-1 self-start">
@@ -197,7 +197,7 @@ export default function TipsPage() {
               <div className="photo-frame overflow-hidden aspect-[4/3] relative">
                 <Image
                   src="/images/tips-bg.jpg"
-                  alt="Reisgids en sporttickets op een houten tafel"
+                  alt="Reisgids en routekaart op een houten tafel"
                   fill
                   className="object-cover"
                 />
@@ -270,10 +270,10 @@ export default function TipsPage() {
         <section className="max-w-5xl mx-auto px-4 py-16 text-center">
           <div className="sticky-note inline-block px-8 py-6 scrap-rotate-neg max-w-sm mx-auto">
             <h2 className="font-serif font-bold text-foreground mb-2">
-              Klaar voor uw sportreis?
+              Klaar voor uw volgende tour?
             </h2>
             <p className="text-sm text-foreground/80 leading-relaxed mb-4 font-sans">
-              Bekijk ons aanbod en laat onze experts de rest regelen.
+              Bekijk ons aanbod en laat ons meedenken over de tour die bij u past.
             </p>
             <Link
               href="/tours"

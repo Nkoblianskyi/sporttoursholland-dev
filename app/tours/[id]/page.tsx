@@ -5,7 +5,7 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { CookieBanner } from '@/components/cookie-banner'
 import { TourCard } from '@/components/tour-card'
-import { tours, sportLabels } from '@/lib/tours-data'
+import { tours, activityLabels } from '@/lib/tours-data'
 import {
   MapPin,
   Calendar,
@@ -89,10 +89,10 @@ export default async function TourDetailPage({ params }: { params: Promise<Param
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Main content */}
             <article className="lg:col-span-2">
-              {/* Sport + tag */}
+              {/* Activity + tag */}
               <div className="flex flex-wrap gap-2 mb-3">
                 <span className="px-2.5 py-0.5 bg-primary/15 text-primary text-xs font-sans border border-primary/30">
-                  {sportLabels[tour.sport]}
+                  {activityLabels[tour.activity]}
                 </span>
                 {tour.tag && (
                   <span className="px-2.5 py-0.5 bg-accent text-accent-foreground text-xs font-sans border border-foreground/15">
@@ -227,7 +227,7 @@ export default async function TourDetailPage({ params }: { params: Promise<Param
                   href="/contact"
                   className="block text-center px-4 py-3 bg-primary text-primary-foreground text-sm font-sans border-2 border-foreground/20 shadow-[2px_2px_0_var(--ink)] hover:shadow-[1px_1px_0_var(--ink)] active:shadow-none transition-all"
                 >
-                  Direct boeken
+                  Vraag een offerte aan
                 </Link>
 
                 <p className="text-xs text-muted-foreground text-center mt-3 font-sans">

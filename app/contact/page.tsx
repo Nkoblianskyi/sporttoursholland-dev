@@ -89,7 +89,7 @@ export default function ContactPage() {
                     SportToursHolland
                   </h2>
                   <p className="text-xs text-muted-foreground font-sans mb-4 leading-relaxed">
-                    Uw specialist in sportreizen door Nederland en Europa. Wij staan voor u klaar van maandag t/m vrijdag, 09:00–17:30 uur.
+                    Kleinschalige auteurstours door Nederland en Europa. Wij staan voor u klaar van maandag t/m vrijdag, 09:00–17:30 uur.
                   </p>
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start gap-2 text-muted-foreground">
@@ -260,7 +260,7 @@ export default function ContactPage() {
                       type="text"
                       value={form.tour}
                       onChange={handleChange}
-                      placeholder="Bijv. Wielerklassieker in de Dolomieten"
+                      placeholder="Bijv. Bergwandelen in de Dolomieten"
                       className="w-full px-3 py-2.5 bg-background border-2 border-border text-sm font-sans text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary transition-colors shadow-[1px_1px_0_var(--kraft-dark)]"
                     />
                   </div>

@@ -15,14 +15,14 @@ const playfairDisplay = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'SportToursHolland – Sportreis door Nederland & Europa',
+  title: 'SportToursHolland – Auteurstours door Nederland & Europa',
   description:
-    'Beleef de spanning van live topsport. SportToursHolland organiseert exclusieve sportreizen door Nederland en heel Europa. Voetbal, tennis, F1, wielrennen en meer.',
-  keywords: ['sportreis', 'sporttouren', 'Nederland', 'Europa', 'voetbalreis', 'tennisreis'],
+    'Kleinschalige auteurstours door Nederland en Europa. Denk aan mountainbike-avonturen, motortochten, bergwandelingen, fietstours en kajaktochten — met persoonlijke begeleiding.',
+  keywords: ['auteurstour', 'auteurstours', 'actieve reizen', 'Nederland', 'Europa', 'kleinschalige reizen', 'fietstour', 'bergwandelen', 'motortocht', 'kajaktocht'],
   metadataBase: new URL('https://sporttoursholland.com'),
   openGraph: {
-    title: 'SportToursHolland – Sportreis door Nederland & Europa',
-    description: 'Exclusieve sportreizen door Nederland en Europa.',
+    title: 'SportToursHolland – Auteurstours door Nederland & Europa',
+    description: 'Kleinschalige auteurstours door Nederland en Europa.',
     url: 'https://sporttoursholland.com',
     siteName: 'SportToursHolland',
     locale: 'nl_NL',

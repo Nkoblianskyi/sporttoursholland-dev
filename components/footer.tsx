@@ -22,7 +22,7 @@ export function Footer() {
               <span className="font-serif text-base font-bold text-foreground">SportToursHolland</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Uw specialist in sportreizen door Nederland en heel Europa. Wij organiseren onvergetelijke sportervaringen voor groepen en individuele reizigers.
+              Kleinschalige auteurstours door Nederland en heel Europa. We organiseren unieke ervaringen met persoonlijke begeleiding, focus op natuur en beleving.
             </p>
           </div>
 

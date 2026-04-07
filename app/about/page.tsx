@@ -8,18 +8,18 @@ import { MapPin, Mail, Phone, Globe, Heart, Award, Users, ThumbsUp } from 'lucid
 const values = [
   {
     icon: Heart,
-    title: 'Passie voor sport',
-    body: 'Wij zijn zelf sportfans en begrijpen wat het betekent om een topprestatie live mee te maken. Die passie zetten we in elke reis.',
+    title: 'Passie voor avontuur',
+    body: 'Wij houden van reizen in beweging: door bergen, bossen en langs stille wegen. Die liefde voel je in elke tour die we samenstellen.',
   },
   {
     icon: Award,
     title: 'Kwaliteit boven alles',
-    body: 'Van de beste tribüneplekken tot zorgvuldig geselecteerde hotels. Wij stellen geen genoegen met minder dan het beste voor onze reizigers.',
+    body: 'Van zorgvuldig gekozen routes tot fijne accommodaties. We stellen geen genoegen met “goed genoeg” als het om beleving en veiligheid gaat.',
   },
   {
     icon: Users,
     title: 'Persoonlijke begeleiding',
-    body: 'Een Nederlandstalige reisbegeleider is altijd aanwezig om uw sportreis tot een onvergetelijke ervaring te maken.',
+    body: 'Een Nederlandstalige begeleider is er voor ritme, routes, tips en rust. Kleinschalig, betrokken en met oog voor elk niveau.',
   },
   {
     icon: ThumbsUp,
@@ -64,16 +64,16 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
             <div>
               <h2 className="font-serif font-bold text-2xl text-foreground mb-4 text-balance">
-                Sport beleef je het beste live
+                Reizen beleef je het beste van dichtbij
               </h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                SportToursHolland werd opgericht vanuit een simpele overtuiging: de spanning van een live sportevenement is onvervangbaar. Televisieschermen en streamingdiensten zijn prachtig, maar niets overtreft het gevoel van tienduizenden supporters die tegelijk juichen, de geur van het gras op het veld, of het gebrul van motoren die rakelings voorbijschieten.
+                SportToursHolland werd opgericht vanuit een simpele overtuiging: de mooiste momenten ontstaan onderweg. Niet in massa, maar in een kleine groep, met tijd voor uitzichtpunten, lokale verhalen en spontane stops.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                Wij zijn een reisspecialist met expertise in het organiseren van groepsreizen naar grote sportevenementen in Nederland en door heel Europa. Ons team bestaat uit doorgewinterde reizigers én echte sportliefhebbers die precies weten welke plekken het beste uitzicht bieden, welke hotels het dichtstbij liggen en hoe je een evenement optimaal beleeft.
+                Wij organiseren kleinschalige auteurstours door Nederland en Europa: mountainbike-avonturen, motortochten door bergpassen, bergwandelingen langs rifugi en rustige fietstours door het landschap. Altijd met persoonlijke begeleiding en een route die verder gaat dan de standaard highlights.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                We werken nauw samen met lokale partners om de beste ervaringen te bieden – van het regelen van tickets tot het organiseren van een exclusieve backstage rondleiding. Uw sportreis is bij ons in goede handen.
+                We werken met lokale partners voor logies, eten en routekennis, zodat u zorgeloos kunt genieten. Uw tour is bij ons in goede handen.
               </p>
             </div>
             <div className="relative scrap-rotate-2 self-start">
@@ -81,13 +81,13 @@ export default function AboutPage() {
               <div className="photo-frame overflow-hidden aspect-[4/3] relative">
                 <Image
                   src="/images/about-bg.jpg"
-                  alt="Het team van SportToursHolland onderweg op sportreis"
+                  alt="Het team van SportToursHolland onderweg op tour"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="absolute -bottom-4 -right-2 sticky-note px-3 py-2 max-w-[130px] scrap-rotate-neg z-10">
-                <p className="text-xs font-sans text-foreground/80">Opgericht met sportpassie in Nederland</p>
+                <p className="text-xs font-sans text-foreground/80">Opgericht met reisliefde in Nederland</p>
               </div>
             </div>
           </div>
